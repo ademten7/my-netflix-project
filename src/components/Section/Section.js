@@ -1,11 +1,11 @@
 import React from "react";
 import Card from "./Card/Card";
-import "./Section.scss";
-
-const Section = () => {
+import "./Section.css";
+export default function Section({ title }) {
+  //console.log(props);
   return (
     <section className="Section">
-      <h4>Action</h4>
+      <h4>{title}</h4>
       <div className="Cards">
         <Card />
         <Card />
@@ -14,6 +14,4 @@ const Section = () => {
       </div>
     </section>
   );
-};
-
-export default Section;
+}

@@ -1,8 +1,5 @@
 import React from "react";
-import "./Card.scss";
-
-const Card = () => {
+import "./Card.css";
+export default function Card() {
   return <article className="Card">Card</article>;
-};
-
-export default Card;
+}
