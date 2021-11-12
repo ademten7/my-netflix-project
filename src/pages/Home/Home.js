@@ -8,7 +8,7 @@ export default function Home() {
       <Section title="Action Movies" />
       <Section title="New Movies" />
       <Section title="New Tv Shows" />
-      <Section title="Action Tv Shows " />
+      <Section title="Action Tv Shows" />
     </div>
   );
 }

@@ -7,6 +7,7 @@ import Home from "./pages/Home/Home";
 import Movies from "./pages/Movies/Movies";
 import TvShows from "./pages/TvShows/TvShows";
 import NotFound from "./pages/NotFound/NotFound";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
