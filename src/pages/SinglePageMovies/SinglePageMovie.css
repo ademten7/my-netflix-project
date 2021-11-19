@@ -1,0 +1,14 @@
+.single {
+    display: grid;
+    place-items: center;
+}
+
+.single-page {
+    display: grid;
+    place-items: center;
+}
+
+.single-page p {
+    width: 50%;
+    text-align: justify;
+}

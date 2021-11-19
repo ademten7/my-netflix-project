@@ -1,0 +1,36 @@
+.Navbar {
+  /*border: 1px solid;*/
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+.Logo {
+  width: 20%;
+}
+
+.NavList {
+  width: 30%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.NavList li {
+  cursor: pointer;
+}
+
+.NavList li a {
+  color: white;
+  text-decoration: none;
+}
+
+.NavList li a:hover {
+  text-decoration: underline;
+}
+
+.NavList li:hover {
+  color: blue;
+}

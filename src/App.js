@@ -1,13 +1,33 @@
-
-import React from 'react';
-
+import "./App.css";
+import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
+//import Section from "./components/Section/Section";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Movies from "./pages/Movies/Movies";
+import TvShows from "./pages/TvShows/TvShows";
+import NotFound from "./pages/NotFound/NotFound";
+import SinglePageMovie from "./pages/SinglePageMovies/SinglePageMovie";
+import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
-    <div className="App">
-      <h1>My React App</h1>
-    </div>
+    <>
+      <Navbar />
+
+      <main className="Container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/movies/:id" element={<SinglePageMovie />} />
+
+          <Route path="/tv-shows" element={<TvShows />} />
+
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+      <Footer />
+    </>
   );
 }
-
 
 export default App;

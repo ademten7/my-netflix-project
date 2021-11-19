@@ -1,0 +1,12 @@
+.Section {
+  /*border: 1px solid green;*/
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 250px;
+}
+
+.Cards {
+  display: flex;
+  justify-content: space-between;
+}
