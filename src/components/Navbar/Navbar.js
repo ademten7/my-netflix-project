@@ -10,6 +10,7 @@ export default function Navbar() {
         <Link to="/">
           {" "}
           <img
+            alt="Netflix logo"
             width={100}
             height={30}
             src="https://play-lh.googleusercontent.com/0rgPYj0GwZ6txpYZrzoMdhwzqg7vY6C9B-Ol7jlaz-Ox2rgpD4Tr82ZgDqkirrEohbGm=w412-h220-rw"

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import Card from "./Card/Card";
 import "./Section.css";
@@ -10,9 +9,7 @@ export default function Section({ title, data }) {
       <h4>{title}</h4>
       <Slider slidesToShow={3} slidesToScroll={3}>
         {data?.map((currentValue) => (
-          <Link to={`/movies/${currentValue.id}`}>
-            <Card key={currentValue.id} movie={currentValue} />
-          </Link>
+          <Card key={currentValue.id} movie={currentValue} />
         ))}
       </Slider>
     </section>

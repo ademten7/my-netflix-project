@@ -1,17 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Card.css";
-
+import { Link } from "react-router-dom";
 export default function Card({ movie }) {
-  //console.log("Movie ==> ", movie.image);
-
+  console.log("Movie ==> ", movie.image);
   return (
-    <div>
+    <Link to={`/movie/${movie.id}`}>
       <article
         className="Card"
         style={{ backgroundImage: `url(${movie.image})` }}
       >
         <h4>{movie.title}</h4>
       </article>
-    </div>
+    </Link>
   );
 }
+
+//params = {key:value}
+// ==> key from Route
+// ==> value from Link
+
+// <Link to={"/movie/" + movie.id}>
