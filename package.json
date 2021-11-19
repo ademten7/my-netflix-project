@@ -10,9 +10,12 @@
         "react": "^17.0.1",
         "react-bootstrap": "^2.0.2",
         "react-dom": "^17.0.1",
+        "react-icons": "^4.3.1",
         "react-router-dom": "^6.0.0",
         "react-scripts": "4.0.3",
+        "react-slick": "^0.28.1",
         "sass": "^1.43.4",
+        "slick-carousel": "^1.8.1",
         "web-vitals": "^1.1.1"
     },
     "scripts": {

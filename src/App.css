@@ -1,9 +1,13 @@
 .Container {
-  border: 1px solid red;
+  /* border: 1px solid red;*/
   padding: 5px;
   min-height: 80vh;
   width: 90vw;
   margin: auto;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.slick-arrow::before {
+  background-color: black;
 }

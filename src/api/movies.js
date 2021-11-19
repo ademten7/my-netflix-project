@@ -9,7 +9,7 @@
  }
  */
 
-// action movies
+// action movies ==> 6 items
 export const actionMovies = [
   {
     id: "123",
@@ -67,7 +67,7 @@ export const actionMovies = [
   },
 ];
 
-// new movies
+// new movies ==> 6 items
 
 export const newMovies = [
   {
@@ -126,6 +126,7 @@ export const newMovies = [
   },
 ];
 
+// movies ==> 12 items ( action + new )
 const movies = [...actionMovies, ...newMovies];
 
 export default movies;

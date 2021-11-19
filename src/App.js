@@ -7,17 +7,21 @@ import Home from "./pages/Home/Home";
 import Movies from "./pages/Movies/Movies";
 import TvShows from "./pages/TvShows/TvShows";
 import NotFound from "./pages/NotFound/NotFound";
+import SinglePageMovie from "./pages/SinglePageMovies/SinglePageMovie";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 function App() {
   return (
     <>
       <Navbar />
+
       <main className="Container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/movies" element={<Movies />} />
+          <Route path="/movies/:id" element={<SinglePageMovie />} />
+
           <Route path="/tv-shows" element={<TvShows />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

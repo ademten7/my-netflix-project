@@ -1,17 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Slider from "react-slick";
 import Card from "./Card/Card";
 import "./Section.css";
-export default function Section({ title }) {
-  //console.log(props);
+export default function Section({ title, data }) {
+  console.log(title, data);
   return (
     <section className="Section">
       <h4>{title}</h4>
-      <div className="Cards">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
+      <Slider slidesToShow={3} slidesToScroll={3}>
+        {data?.map((currentValue) => (
+          <Link to={`/movies/${currentValue.id}`}>
+            <Card key={currentValue.id} movie={currentValue} />
+          </Link>
+        ))}
+      </Slider>
     </section>
   );
 }
