@@ -6,8 +6,8 @@ import { actionMovies, newMovies } from "../../api/movies";
 export default function Movies() {
   return (
     <div>
-      <Section title="Action Movies" data={actionMovies} />
-      <Section title="New Movies" data={newMovies} />
+      <Section title="Action Movies" data={actionMovies} content="movie" />
+      <Section title="New Movies" data={newMovies} content="movie" />
     </div>
   );
 }
