@@ -1,0 +1,37 @@
+.TvShow {
+    display: flex;
+}
+
+.Seasons {
+    padding: 5px;
+    width: 30%;
+    margin-right: 5px;
+}
+
+.Season {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    margin-bottom: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Season:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid;
+}
+
+.Episode {
+    margin-bottom: 15px;
+}
+
+.EpisodeImage {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.EpisodeImage:hover {
+    transform: scale(1.2);
+}

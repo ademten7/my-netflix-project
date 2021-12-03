@@ -145,13 +145,6 @@ export const actionTvShows = [
               "https://static3.srcdn.com/wordpress/wp-content/uploads/2019/02/Umbrella-Academy.jpg?q=50&fit=crop&w=740&h=370&dpr=1.5",
             video: "https://www.youtube.com/embed/0DAmWHxeoKw",
           },
-          {
-            id: "ghv098eewwaasdcds",
-            title: "episodes 3",
-            image:
-              "https://static3.srcdn.com/wordpress/wp-content/uploads/2019/02/Umbrella-Academy.jpg?q=50&fit=crop&w=740&h=370&dpr=1.5",
-            video: "https://www.youtube.com/embed/0DAmWHxeoKw",
-          },
         ],
       },
     ],
