@@ -3,6 +3,7 @@ import "./TvShowEpisode.css";
 import { useParams } from "react-router-dom";
 import tvShowsData from "../../api/tvShows";
 import { Modal } from "react-bootstrap";
+import { BsFillPlayBtnFill } from "react-icons/bs";
 // import tvShows from "../../api/tvShows";
 
 const TvShowEpisode = () => {
@@ -30,9 +31,9 @@ const TvShowEpisode = () => {
       <h2>
         {season.title} - {episode.title}
       </h2>
-      <div className="Play" onClick={() => setIsOpen(!isOpen)}>
-        PLAY
-      </div>
+      <span className="Play" onClick={() => setIsOpen(!isOpen)}>
+        <BsFillPlayBtnFill />
+      </span>
       <Modal
         onHide={() => setIsOpen(false)}
         show={isOpen}

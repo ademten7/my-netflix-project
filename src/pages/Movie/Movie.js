@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import moviesData from "../../api/movies";
 import { Modal } from "react-bootstrap";
 import "./Movie.css";
+import { BsFillPlayBtnFill } from "react-icons/bs";
 
 export default function Movie() {
   const { pageId } = useParams();
@@ -32,7 +33,7 @@ export default function Movie() {
         <h2>{movieObject.title}</h2>
         <p>{movieObject.description}</p>
         <span className="Play" onClick={() => setIsOpen(true)}>
-          PLAY
+          <BsFillPlayBtnFill />
         </span>
 
         <Modal
